@@ -1,0 +1,210 @@
+2023-10-10 14:46:01.630  INFO 25508 --- [main] spring.Application                       : Starting Application using Java 11.0.20 on Sidan with PID 25508 (C:\HelloTest\target\classes started by Elena Sidanova in C:\HelloTest)
+2023-10-10 14:46:01.634 DEBUG 25508 --- [main] spring.Application                       : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-10-10 14:46:01.634  INFO 25508 --- [main] spring.Application                       : No active profile set, falling back to 1 default profile: "default"
+2023-10-10 14:46:02.177  INFO 25508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10 14:46:02.216  INFO 25508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2023-10-10 14:46:02.595  INFO 25508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10 14:46:02.602  INFO 25508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10 14:46:02.602  INFO 25508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-10 14:46:02.693  INFO 25508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-10 14:46:02.694  INFO 25508 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1029 ms
+2023-10-10 14:46:02.892  INFO 25508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-10 14:46:03.024  INFO 25508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-10 14:46:03.176  INFO 25508 --- [main] liquibase.database                       : Set default schema name to public
+2023-10-10 14:46:03.251  INFO 25508 --- [main] liquibase.lockservice                    : Changelog-Protokoll erfolgreich gesperrt.
+2023-10-10 14:46:03.563  INFO 25508 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-10-10 14:46:03.596  INFO 25508 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-10-10 14:46:03.668  INFO 25508 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10 14:46:03.706  INFO 25508 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-10 14:46:03.810  INFO 25508 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-10 14:46:03.887  INFO 25508 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-10 14:46:04.258  INFO 25508 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10 14:46:04.266  INFO 25508 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10 14:46:04.589  WARN 25508 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10 14:46:04.866  INFO 25508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-10 14:46:04.875  INFO 25508 --- [main] spring.Application                       : Started Application in 3.622 seconds (JVM running for 4.297)
+2023-10-10 14:47:17.626  INFO 25508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-10 14:47:17.628  INFO 25508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-10 14:47:17.629  INFO 25508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-10 14:47:17.668 ERROR 25508 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.StringIndexOutOfBoundsException: String index out of range: -1] with root cause
+
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.String.substring(String.java:1841) ~[na:na]
+	at org.springdoc.ui.AbstractSwaggerResourceResolver.path(AbstractSwaggerResourceResolver.java:71) ~[springdoc-openapi-common-1.7.0.jar:1.7.0]
+	at org.springdoc.ui.AbstractSwaggerResourceResolver.findWebJarResourcePath(AbstractSwaggerResourceResolver.java:42) ~[springdoc-openapi-common-1.7.0.jar:1.7.0]
+	at org.springdoc.webmvc.ui.SwaggerResourceResolver.resolveResource(SwaggerResourceResolver.java:34) ~[springdoc-openapi-ui-1.7.0.jar:1.7.0]
+	at org.springframework.web.servlet.resource.DefaultResourceResolverChain.resolveResource(DefaultResourceResolverChain.java:75) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.getResource(ResourceHttpRequestHandler.java:627) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:558) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.80.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.80.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.80.jar:9.0.80]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.80.jar:9.0.80]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2023-10-10 14:48:37.719  INFO 25508 --- [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 201 ms
+2023-10-10 14:49:02.270  INFO 25508 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10 14:49:02.274  INFO 25508 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-10 14:49:02.285  INFO 25508 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-10 15:25:07.340  INFO 14264 --- [main] spring.Application                       : Starting Application using Java 11.0.20 on Sidan with PID 14264 (C:\HelloTest\target\classes started by Elena Sidanova in C:\HelloTest)
+2023-10-10 15:25:07.342 DEBUG 14264 --- [main] spring.Application                       : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-10-10 15:25:07.342  INFO 14264 --- [main] spring.Application                       : No active profile set, falling back to 1 default profile: "default"
+2023-10-10 15:25:07.825  INFO 14264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10 15:25:07.868  INFO 14264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2023-10-10 15:25:08.174  INFO 14264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10 15:25:08.180  INFO 14264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10 15:25:08.180  INFO 14264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-10 15:25:08.269  INFO 14264 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-10 15:25:08.269  INFO 14264 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 902 ms
+2023-10-10 15:25:08.379  INFO 14264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-10 15:25:08.500  INFO 14264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-10 15:25:08.590  INFO 14264 --- [main] liquibase.database                       : Set default schema name to public
+2023-10-10 15:25:08.652  INFO 14264 --- [main] liquibase.lockservice                    : Changelog-Protokoll erfolgreich gesperrt.
+2023-10-10 15:25:08.956  INFO 14264 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-10-10 15:25:08.982  INFO 14264 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-10-10 15:25:09.039  INFO 14264 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10 15:25:09.062  INFO 14264 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-10 15:25:09.145  INFO 14264 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-10 15:25:09.216  INFO 14264 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-10 15:25:09.506  INFO 14264 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10 15:25:09.512  INFO 14264 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10 15:25:09.752  WARN 14264 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10 15:25:09.971  INFO 14264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-10 15:25:09.980  INFO 14264 --- [main] spring.Application                       : Started Application in 2.897 seconds (JVM running for 7.154)
+2023-10-10 15:25:20.029  INFO 14264 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-10 15:25:20.031  INFO 14264 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-10 15:25:20.032  INFO 14264 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-10 15:25:20.338  INFO 14264 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 171 ms
+2023-10-10 15:31:42.583  INFO 19696 --- [main] spring.EventServiceTest                  : Starting EventServiceTest using Java 11.0.20 on Sidan with PID 19696 (started by Elena Sidanova in C:\HelloTest)
+2023-10-10 15:31:42.585 DEBUG 19696 --- [main] spring.EventServiceTest                  : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-10-10 15:31:42.585  INFO 19696 --- [main] spring.EventServiceTest                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-10 15:31:43.181  INFO 19696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10 15:31:43.235  INFO 19696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2023-10-10 15:31:43.774  INFO 19696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-10 15:31:44.029  INFO 19696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-10 15:31:44.146  INFO 19696 --- [main] liquibase.database                       : Set default schema name to public
+2023-10-10 15:31:44.264  INFO 19696 --- [main] liquibase.lockservice                    : Changelog-Protokoll erfolgreich gesperrt.
+2023-10-10 15:31:44.689  INFO 19696 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-10-10 15:31:44.735  INFO 19696 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-10-10 15:31:44.915  INFO 19696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10 15:31:44.983  INFO 19696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-10 15:31:45.138  INFO 19696 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-10 15:31:45.242  INFO 19696 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-10 15:31:45.656  INFO 19696 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10 15:31:45.664  INFO 19696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10 15:31:46.625  WARN 19696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10 15:31:47.509  INFO 19696 --- [main] spring.EventServiceTest                  : Started EventServiceTest in 5.278 seconds (JVM running for 6.164)
+2023-10-10 15:31:47.812  INFO 19696 --- [main] spring.service.EventService              : Added new event: spring.domain.Event@38f4a641
+2023-10-10 15:31:47.841  INFO 19696 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10 15:31:47.844  INFO 19696 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-10 15:31:47.857  INFO 19696 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-10 15:37:44.321  INFO 6036 --- [main] spring.EventServiceTest                  : Starting EventServiceTest using Java 11.0.20 on Sidan with PID 6036 (started by Elena Sidanova in C:\HelloTest)
+2023-10-10 15:37:44.322 DEBUG 6036 --- [main] spring.EventServiceTest                  : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-10-10 15:37:44.323  INFO 6036 --- [main] spring.EventServiceTest                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-10 15:37:44.912  INFO 6036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10 15:37:44.959  INFO 6036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2023-10-10 15:37:45.457  INFO 6036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-10 15:37:45.700  INFO 6036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-10 15:37:45.821  INFO 6036 --- [main] liquibase.database                       : Set default schema name to public
+2023-10-10 15:37:45.912  INFO 6036 --- [main] liquibase.lockservice                    : Changelog-Protokoll erfolgreich gesperrt.
+2023-10-10 15:37:46.275  INFO 6036 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-10-10 15:37:46.316  INFO 6036 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-10-10 15:37:46.500  INFO 6036 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10 15:37:46.563  INFO 6036 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-10 15:37:46.713  INFO 6036 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-10 15:37:46.819  INFO 6036 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-10 15:37:47.245  INFO 6036 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10 15:37:47.252  INFO 6036 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10 15:37:48.125  WARN 6036 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10 15:37:49.000  INFO 6036 --- [main] spring.EventServiceTest                  : Started EventServiceTest in 5.041 seconds (JVM running for 5.947)
+2023-10-10 15:37:49.246  INFO 6036 --- [main] spring.service.EventService              : Added new event: spring.domain.Event@38f4a641
+2023-10-10 15:37:49.278  INFO 6036 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10 15:37:49.281  INFO 6036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-10 15:37:49.291  INFO 6036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-10 15:56:12.685  INFO 14264 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10 15:56:12.687  INFO 14264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-10 15:56:12.693  INFO 14264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-10 16:09:16.257  INFO 3748 --- [main] spring.EventServiceTest                  : Starting EventServiceTest using Java 11.0.20 on Sidan with PID 3748 (started by Elena Sidanova in C:\Backend\HelloTest)
+2023-10-10 16:09:16.258 DEBUG 3748 --- [main] spring.EventServiceTest                  : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-10-10 16:09:16.260  INFO 3748 --- [main] spring.EventServiceTest                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-10 16:09:16.936  INFO 3748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10 16:09:16.978  INFO 3748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2023-10-10 16:09:17.560  INFO 3748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-10 16:09:17.847  INFO 3748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-10 16:09:18.015  INFO 3748 --- [main] liquibase.database                       : Set default schema name to public
+2023-10-10 16:09:18.166  INFO 3748 --- [main] liquibase.lockservice                    : Changelog-Protokoll erfolgreich gesperrt.
+2023-10-10 16:09:18.596  INFO 3748 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-10-10 16:09:18.651  INFO 3748 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-10-10 16:09:18.937  INFO 3748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10 16:09:19.013  INFO 3748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-10 16:09:19.154  INFO 3748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-10 16:09:19.279  INFO 3748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-10 16:09:19.730  INFO 3748 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10 16:09:19.738  INFO 3748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10 16:09:20.599  WARN 3748 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10 16:09:21.462  INFO 3748 --- [main] spring.EventServiceTest                  : Started EventServiceTest in 5.628 seconds (JVM running for 6.496)
+2023-10-10 16:09:21.739  INFO 3748 --- [main] spring.service.EventService              : Added new event: spring.domain.Event@2f0a29f7
+2023-10-10 16:09:21.764  INFO 3748 --- [main] spring.service.EventService              : Updated event with ID 4: spring.domain.Event@68e8bbab
+2023-10-10 16:09:21.781  INFO 3748 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10 16:09:21.784  INFO 3748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-10 16:09:21.795  INFO 3748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-10 16:10:46.765  INFO 21784 --- [main] spring.EventServiceTest                  : Starting EventServiceTest using Java 11.0.20 on Sidan with PID 21784 (started by Elena Sidanova in C:\Backend\HelloTest)
+2023-10-10 16:10:46.766 DEBUG 21784 --- [main] spring.EventServiceTest                  : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-10-10 16:10:46.766  INFO 21784 --- [main] spring.EventServiceTest                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-10 16:10:47.324  INFO 21784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10 16:10:47.371  INFO 21784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2023-10-10 16:10:47.864  INFO 21784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-10 16:10:48.106  INFO 21784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-10 16:10:48.214  INFO 21784 --- [main] liquibase.database                       : Set default schema name to public
+2023-10-10 16:10:48.330  INFO 21784 --- [main] liquibase.lockservice                    : Changelog-Protokoll erfolgreich gesperrt.
+2023-10-10 16:10:48.713  INFO 21784 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-10-10 16:10:48.760  INFO 21784 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-10-10 16:10:48.887  INFO 21784 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10 16:10:48.956  INFO 21784 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-10 16:10:49.082  INFO 21784 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-10 16:10:49.181  INFO 21784 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-10 16:10:49.545  INFO 21784 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10 16:10:49.552  INFO 21784 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10 16:10:50.455  WARN 21784 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10 16:10:51.387  INFO 21784 --- [main] spring.EventServiceTest                  : Started EventServiceTest in 4.973 seconds (JVM running for 5.825)
+2023-10-10 16:10:51.633  INFO 21784 --- [main] spring.service.EventService              : Added new event: spring.domain.Event@7421213d
+2023-10-10 16:10:51.651  INFO 21784 --- [main] spring.service.EventService              : Deleted event with ID 5: spring.domain.Event@1bff4b1f
+2023-10-10 16:10:51.671  INFO 21784 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10 16:10:51.673  INFO 21784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-10 16:10:51.684  INFO 21784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

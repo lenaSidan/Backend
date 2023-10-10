@@ -1,0 +1,180 @@
+2023-10-06 00:51:34.944  INFO 9120 --- [main] spring.Application                       : Starting Application using Java 11.0.20 on Sidan with PID 9120 (C:\Backend\HelloLiquibase\target\classes started by Elena Sidanova in C:\Backend\HelloLiquibase)
+2023-10-06 00:51:34.949 DEBUG 9120 --- [main] spring.Application                       : Running with Spring Boot v2.7.15, Spring v5.3.29
+2023-10-06 00:51:34.950  INFO 9120 --- [main] spring.Application                       : No active profile set, falling back to 1 default profile: "default"
+2023-10-06 00:51:35.399  INFO 9120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 00:51:35.442  INFO 9120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+2023-10-06 00:51:35.686  INFO 9120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-06 00:51:35.691  INFO 9120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-06 00:51:35.691  INFO 9120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-10-06 00:51:35.767  INFO 9120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-06 00:51:35.767  INFO 9120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 787 ms
+2023-10-06 00:51:35.878  INFO 9120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06 00:51:35.985  INFO 9120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06 00:51:36.065  INFO 9120 --- [main] liquibase.database                       : Set default schema name to public
+2023-10-06 00:51:36.129  INFO 9120 --- [main] liquibase.lockservice                    : Changelog-Protokoll erfolgreich gesperrt.
+2023-10-06 00:51:36.356  INFO 9120 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-10-06 00:51:36.390  INFO 9120 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-10-06 00:51:36.453  INFO 9120 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 00:51:36.477  INFO 9120 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-06 00:51:36.545  INFO 9120 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-06 00:51:36.615  INFO 9120 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-06 00:51:36.884  INFO 9120 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 00:51:36.891  INFO 9120 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 00:51:37.127  WARN 9120 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 00:51:37.365  WARN 9120 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-10-06 00:51:37.367  INFO 9120 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 00:51:37.368  INFO 9120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06 00:51:37.379  INFO 9120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06 00:51:37.381  INFO 9120 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-06 00:51:37.389  INFO 9120 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-10-06 00:51:37.401 ERROR 9120 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-10-06 00:53:48.629  INFO 8104 --- [main] spring.Application                       : Starting Application using Java 11.0.20 on Sidan with PID 8104 (C:\Backend\HelloLiquibase\target\classes started by Elena Sidanova in C:\Backend\HelloLiquibase)
+2023-10-06 00:53:48.631 DEBUG 8104 --- [main] spring.Application                       : Running with Spring Boot v2.7.15, Spring v5.3.29
+2023-10-06 00:53:48.631  INFO 8104 --- [main] spring.Application                       : No active profile set, falling back to 1 default profile: "default"
+2023-10-06 00:53:49.023  INFO 8104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 00:53:49.051  INFO 8104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-10-06 00:53:49.300  INFO 8104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-06 00:53:49.306  INFO 8104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-06 00:53:49.307  INFO 8104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-10-06 00:53:49.381  INFO 8104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-06 00:53:49.381  INFO 8104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 726 ms
+2023-10-06 00:53:49.486  INFO 8104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06 00:53:49.582  INFO 8104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06 00:53:49.665  INFO 8104 --- [main] liquibase.database                       : Set default schema name to public
+2023-10-06 00:53:49.719  INFO 8104 --- [main] liquibase.lockservice                    : Changelog-Protokoll erfolgreich gesperrt.
+2023-10-06 00:53:49.954  INFO 8104 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-10-06 00:53:49.997  INFO 8104 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-10-06 00:53:50.065  INFO 8104 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 00:53:50.096  INFO 8104 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-06 00:53:50.188  INFO 8104 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-06 00:53:50.244  INFO 8104 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-06 00:53:50.504  INFO 8104 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 00:53:50.523  INFO 8104 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 00:53:50.747  WARN 8104 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 00:53:50.947  WARN 8104 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-10-06 00:53:50.949  INFO 8104 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 00:53:50.949  INFO 8104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06 00:53:50.961  INFO 8104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06 00:53:50.963  INFO 8104 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-06 00:53:50.972  INFO 8104 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-10-06 00:53:50.983 ERROR 8104 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-10-06 00:54:10.634  INFO 11108 --- [main] spring.Application                       : Starting Application using Java 11.0.20 on Sidan with PID 11108 (C:\Backend\HelloLiquibase\target\classes started by Elena Sidanova in C:\Backend\HelloLiquibase)
+2023-10-06 00:54:10.635 DEBUG 11108 --- [main] spring.Application                       : Running with Spring Boot v2.7.15, Spring v5.3.29
+2023-10-06 00:54:10.636  INFO 11108 --- [main] spring.Application                       : No active profile set, falling back to 1 default profile: "default"
+2023-10-06 00:54:11.105  INFO 11108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 00:54:11.134  INFO 11108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-10-06 00:54:11.399  INFO 11108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-06 00:54:11.404  INFO 11108 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-06 00:54:11.405  INFO 11108 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-10-06 00:54:11.485  INFO 11108 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-06 00:54:11.485  INFO 11108 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 821 ms
+2023-10-06 00:54:11.587  INFO 11108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06 00:54:11.691  INFO 11108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06 00:54:11.773  INFO 11108 --- [main] liquibase.database                       : Set default schema name to public
+2023-10-06 00:54:11.834  INFO 11108 --- [main] liquibase.lockservice                    : Changelog-Protokoll erfolgreich gesperrt.
+2023-10-06 00:54:12.067  INFO 11108 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-10-06 00:54:12.097  INFO 11108 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-10-06 00:54:12.151  INFO 11108 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 00:54:12.172  INFO 11108 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-06 00:54:12.236  INFO 11108 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-06 00:54:12.293  INFO 11108 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-06 00:54:12.591  INFO 11108 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 00:54:12.598  INFO 11108 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 00:54:12.816  WARN 11108 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 00:54:13.033  WARN 11108 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-10-06 00:54:13.035  INFO 11108 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 00:54:13.036  INFO 11108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06 00:54:13.046  INFO 11108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06 00:54:13.048  INFO 11108 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-06 00:54:13.056  INFO 11108 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-10-06 00:54:13.067 ERROR 11108 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-10-06 13:53:23.595  INFO 5412 --- [main] spring.Application                       : Starting Application using Java 11.0.20 on Sidan with PID 5412 (C:\Backend\HelloLiquibase\target\classes started by Elena Sidanova in C:\Backend\HelloLiquibase)
+2023-10-06 13:53:23.596 DEBUG 5412 --- [main] spring.Application                       : Running with Spring Boot v2.7.15, Spring v5.3.29
+2023-10-06 13:53:23.597  INFO 5412 --- [main] spring.Application                       : No active profile set, falling back to 1 default profile: "default"
+2023-10-06 13:53:24.029  INFO 5412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 13:53:24.061  INFO 5412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2023-10-06 13:53:24.324  INFO 5412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-06 13:53:24.328  INFO 5412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-06 13:53:24.328  INFO 5412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-10-06 13:53:24.408  INFO 5412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-06 13:53:24.409  INFO 5412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 789 ms
+2023-10-06 13:53:24.510  INFO 5412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06 13:53:24.609  INFO 5412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06 13:53:24.679  INFO 5412 --- [main] liquibase.database                       : Set default schema name to public
+2023-10-06 13:53:24.729  INFO 5412 --- [main] liquibase.lockservice                    : Changelog-Protokoll erfolgreich gesperrt.
+2023-10-06 13:53:24.967  INFO 5412 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-10-06 13:53:25.003  INFO 5412 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-10-06 13:53:25.060  INFO 5412 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 13:53:25.080  INFO 5412 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-06 13:53:25.141  INFO 5412 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-06 13:53:25.196  INFO 5412 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-06 13:53:25.454  INFO 5412 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 13:53:25.459  INFO 5412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 13:53:25.667  WARN 5412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 13:53:25.866  WARN 5412 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-10-06 13:53:25.867  INFO 5412 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 13:53:25.868  INFO 5412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06 13:53:25.881  INFO 5412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-06 13:53:25.884  INFO 5412 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-06 13:53:25.894  INFO 5412 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-10-06 13:53:25.908 ERROR 5412 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

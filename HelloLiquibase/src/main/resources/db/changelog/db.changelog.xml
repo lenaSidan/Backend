@@ -23,18 +23,16 @@
             <column name="name" type="varchar(255)"/>
         </createTable>
         <sql>INSERT INTO cities (name) SELECT DISTINCT e.city FROM events e</sql>
-
         <addColumn tableName="events">
-        <column name="city_id" type="int" />
+            <column name="city_id" type="int" />
         </addColumn>
-
         <sql>UPDATE events SET city_id = sq.city_id
-                FROM (SELECT c FROM cities c) AS sq
-                WHERE events.city = sq.name</sql>
+            FROM (SELECT * FROM cities) AS sq
+             WHERE events.city = sq.name</sql>
         <dropColumn tableName="events" columnName="city" />
         <addForeignKeyConstraint baseTableName="events" baseColumnNames="city_id"
-                                 constraintName="fk_events_cities" referencedTableName="city"
-                                 referencedColumnNames="city_id" />
+                                 constraintName="fk_events_cities"
+                                 referencedTableName="cities" referencedColumnNames="city_id" />
     </changeSet>
 
 </databaseChangeLog>

@@ -2,6 +2,7 @@ package spring.service;
 
 import ch.qos.logback.core.joran.event.EndEvent;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +18,10 @@ import java.util.List;
 
 
 @Service
+@Slf4j
 public class EventService {
 
-    static final Logger log = LoggerFactory.getLogger(EventService.class);
+   //static final Logger log = LoggerFactory.getLogger(EventService.class);
 
     @Autowired
     private EventRepository eventRepository;
@@ -34,7 +36,10 @@ public class EventService {
         for (Event e : events) {
             result.add(EventDTO.getInstance(e));
         }
+        log.error("Error...");
+        log.warn("Warning...");
         log.info("Reading {} records from Event table.", result.size());
+        log.debug("Debug...");
         return result;
     }
 

@@ -1,0 +1,5 @@
+spring\hellocrud\domain\Event.class
+spring\hellocrud\service\EventService.class
+spring\hellocrud\controller\EventController.class
+spring\hellocrud\Application.class
+spring\hellocrud\repository\EventRepository.class
