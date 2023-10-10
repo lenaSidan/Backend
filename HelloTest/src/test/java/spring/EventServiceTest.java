@@ -68,4 +68,6 @@ public class EventServiceTest {
         Assertions.assertEquals(addedEvent.getId(), deletedEvent.getId());
         Assertions.assertFalse(eventRepository.existsById(addedEvent.getId()));
     }
+    
 }
+
