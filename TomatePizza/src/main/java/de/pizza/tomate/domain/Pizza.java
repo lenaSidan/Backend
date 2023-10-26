@@ -28,8 +28,10 @@ public class Pizza {
     @ManyToOne
     @JoinColumn(name = "pizza_base_id")
     private PizzaBase pizzaBase;
-    private Double price;
 
-    private boolean deleted;
+    private Double priceBase;
+
+    // price with/without ingredient
+    private Double total;
 
 }

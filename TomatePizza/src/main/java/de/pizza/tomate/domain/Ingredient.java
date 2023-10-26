@@ -24,6 +24,7 @@ public class Ingredient {
     @ManyToOne
     @JoinColumn(name = "pizza_size_id")
     private PizzaSize pizzaSize;
+
     private String description;
     private Double price;
 }

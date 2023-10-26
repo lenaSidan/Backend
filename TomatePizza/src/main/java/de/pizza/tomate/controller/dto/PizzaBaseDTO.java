@@ -9,8 +9,8 @@ import lombok.Getter;
 public class PizzaBaseDTO {
     private Integer id;
     private String name;
-    private String size;
     private String description;
+    private String size;
     private Double price;
     private Boolean deleted;
 
@@ -21,6 +21,5 @@ public class PizzaBaseDTO {
                 pizza.getPizzaSize().getName(),
                 pizza.getPrice(),
                 pizza.getDeleted());
-
     }
 }

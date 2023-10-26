@@ -1,5 +1,6 @@
 package de.pizza.tomate.domain;
 
+import liquibase.pro.packaged.B;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,6 +29,8 @@ public class PizzaBase {
     private PizzaSize pizzaSize;
 
     private Double price;
+
+    private Boolean ordered;
 
     private Boolean deleted ;
 }

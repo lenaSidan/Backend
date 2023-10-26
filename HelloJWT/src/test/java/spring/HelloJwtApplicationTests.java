@@ -1,13 +1,13 @@
-package de.pizza.tomate;
+package spring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TomatePizzaApplicationTests {
+class HelloJwtApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }

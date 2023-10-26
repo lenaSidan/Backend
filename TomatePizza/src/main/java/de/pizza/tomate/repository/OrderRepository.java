@@ -1,10 +1,13 @@
 package de.pizza.tomate.repository;
 
 import de.pizza.tomate.domain.Order;
-import liquibase.pro.packaged.O;
+import de.pizza.tomate.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
-public interface OderRepository extends JpaRepository<Order, Integer> {
+public interface OrderRepository extends JpaRepository<Order, Integer> {
+    List<Order> findByUser(User user);
 }
