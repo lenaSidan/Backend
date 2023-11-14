@@ -16,6 +16,7 @@ public class PizzaBaseController {
     @Autowired
     private PizzaBaseService pizzaBaseService;
 
+
     @GetMapping("/all")
     public List<PizzaBaseDTO> findAll() {
         return pizzaBaseService.findAll();

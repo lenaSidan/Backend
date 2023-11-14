@@ -11,12 +11,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hello-security-jwt" target="11" />
       <module name="TomatePizza" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="TomatePizza" options="-parameters" />
+      <module name="hello-security-jwt" options="-parameters" />
       <module name="tomate-pizza-de" options="-parameters" />
     </option>
   </component>

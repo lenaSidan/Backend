@@ -1,4 +1,4 @@
-package spring.controller.DTO;
+package spring.controller.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
